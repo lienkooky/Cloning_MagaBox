@@ -555,6 +555,19 @@
 .new .new_right .summary {
   font-size: 14px;
 }
+.new .new_right .summary .bar {
+  position: relative;
+  padding-right: 10px;
+}
+.new .new_right .summary .bar::after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 6px;
+  width: 1px;
+  height: 10px;
+  background-color: #999;
+}
 .new .new_right .summary .genre {
   padding-bottom: 3px;
 }
@@ -698,6 +711,42 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* 할인 카드 */
+.card {
+  padding: 17px;
+}
+.card ul {
+}
+.card ul li {
+  position: relative;
+  border: 1px solid #d7d7d7;
+  padding: 15px;
+  margin-bottom: 15px;
+  min-height: 102px;
+  box-sizing: border-box;
+}
+.card ul li span {
+  position: absolute;
+  left: 17px;
+  top: 17px;
+}
+.card ul li span img {
+  width: 105px;
+}
+.card ul li strong {
+  display: block;
+  font-size: 18px;
+  padding-left: 120px;
+  color: #777;
+}
+.card ul li em {
+  display: block;
+  font-size: 14px;
+  padding-left: 120px;
+  color: #777;
+  font-weight: 300;
 }
 
 /* 미디어 쿼리 */
