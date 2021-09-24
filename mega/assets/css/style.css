@@ -1,5 +1,25 @@
 @charset "utf-8";
 
+/* 스킵메뉴 */
+#skip {
+  position: relative;
+}
+#skip a {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 140px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+  line-height: 30px;
+}
+#skip a:active,
+#skip a:focus {
+  top: 0;
+}
+
 /* 레이아웃 */
 #mNav {
   display: none;
@@ -712,6 +732,11 @@
 .notice ul li ul li dd {
   color: #777;
   padding-top: 3px;
+}
+.notice ul li ul li a {
+  border: none;
+  padding: 0;
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -952,7 +977,6 @@
   }
   .service li {
     width: 25%;
-    height: auto;
   }
   .service li:nth-child(1) {
     border-bottom: 1px solid #d7d7d7;
@@ -1189,7 +1213,6 @@
   .help article.help_box3 {
     width: 100%;
     background-color: #fff;
-    margin-top: 0;
     margin-top: 24px;
   }
   .help article.help_box1 h3 {
@@ -1213,6 +1236,9 @@
     margin-bottom: 20px;
     padding-bottom: 10px;
     height: auto;
+  }
+  .service li:nth-child(2) {
+    border-right: 1px solid #d7d7d7;
   }
 }
 
